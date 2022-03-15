@@ -2,7 +2,7 @@ from flask import redirect, render_template, request, url_for
 from website import app
 from website.models import Product
 from website.form import SearchForm
-import jyserver.Flask as jsf
+# import jyserver.Flask as jsf
 
 @app.context_processor
 def base():
