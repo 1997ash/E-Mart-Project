@@ -14,18 +14,13 @@
                 <fieldset class="form-group mb-4">
                     <legend class="mb-0">店家</legend>
                     <hr class="color-9 my-2">
+
                     <div class="form-check mb-0">
                         <label class="form-check-label fw-400">
-                            <input class="form-check-input mr-2" id="optionsRadios1" type="radio" name="optionsRadios" value="option1" checked="">7-11 統一超商 </label>
+                            <input class="form-check-input mr-2" id="optionsRadios1" type="radio" name="optionsRadios" value="option1" checked="">{{ stores }}
+                        </label>
                     </div>
-                    <div class="form-check mb-0">
-                        <label class="form-check-label fw-400">
-                            <input class="form-check-input mr-2" id="optionsRadios2" type="radio" name="optionsRadios" value="option2">全家 FamilyMart </label>
-                    </div>
-                    <div class="form-check mb-0">
-                        <label class="form-check-label fw-400">
-                            <input class="form-check-input mr-2" id="optionsRadios3" type="radio" name="optionsRadios" value="option3">全聯 </label>
-                    </div>
+
                     <div class="form-check mb-0">
                         <label class="form-check-label fw-400">
                             <input class="form-check-input mr-2" id="optionsRadios3" type="radio" name="optionsRadios" value="option3">家樂福 </label>
@@ -149,4 +144,15 @@
     </div>
     <!--/.container-->
 </section>
+<!-- <script>
+    self.isAscending = true;
+    self.sortPrice = function() {
+        if(self.isAscending){
+            self.arr = self.arr.sort((a ,b) => (a.title > b.title) ? 1:-1);
+        }else{
+            self.arr = self.arr.sort((a ,b) => (a.title > b.title) ? -1:1);
+        }
+        self.isAscending = !self.isAscending;
+    }
+</script> -->
 {% endblock content %}
